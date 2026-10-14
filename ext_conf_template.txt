@@ -1,0 +1,2 @@
+# cat=basic/enable; type=string; label=Label rendering: comma separated list of "languageId=format", e.g. 1=%s [DE],2=%s [FR]. %s is replaced with the translated title.
+labelRendering =

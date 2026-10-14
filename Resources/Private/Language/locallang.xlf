@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2">
+  <file source-language="en" datatype="plaintext" original="messages" date="2026-10-14T00:00:00Z" product-name="translated_pagetree">
+    <header/>
+    <body>
+      <trans-unit id="be_users.language">
+        <source>Language of the page tree</source>
+      </trans-unit>
+      <trans-unit id="be_users.language.description">
+        <source>Page titles are shown in this language if a translation exists.</source>
+      </trans-unit>
+      <trans-unit id="be_users.language.default">
+        <source>Default language</source>
+      </trans-unit>
+      <trans-unit id="toolbar.title">
+        <source>Page tree language</source>
+      </trans-unit>
+      <trans-unit id="toolbar.headline">
+        <source>Language of the page tree</source>
+      </trans-unit>
+      <trans-unit id="tree.editLocked">
+        <source>Translated title, renaming is only possible in the default language</source>
+      </trans-unit>
+    </body>
+  </file>
+</xliff>

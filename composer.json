@@ -1,0 +1,28 @@
+{
+    "name": "georgringer/translated_pagetree",
+    "description": "Show the backend page tree in a language of your choice",
+    "license": "GPL-2.0-or-later",
+    "type": "typo3-cms-extension",
+    "authors": [
+        {
+            "name": "Georg Ringer",
+            "homepage": "https://ringer.it",
+            "role": "Developer"
+        }
+    ],
+    "require": {
+        "php": ">= 8.2",
+        "typo3/cms-backend": "^14.3",
+        "typo3/cms-core": "^14.3"
+    },
+    "autoload": {
+        "psr-4": {
+            "GeorgRinger\\TranslatedPagetree\\": "Classes"
+        }
+    },
+    "extra": {
+        "typo3/cms": {
+            "extension-key": "translated_pagetree"
+        }
+    }
+}

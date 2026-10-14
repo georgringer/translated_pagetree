@@ -1,0 +1,31 @@
+<html xmlns:core="http://typo3.org/ns/TYPO3/CMS/Core/ViewHelpers" xmlns:f="http://typo3.org/ns/TYPO3/CMS/Fluid/ViewHelpers" data-namespace-typo3-fluid="true">
+<p class="dropdown-headline"><f:translate key="LLL:EXT:translated_pagetree/Resources/Private/Language/locallang.xlf:toolbar.headline"/></p>
+<ul class="dropdown-list">
+    <li>
+        <a href="#" class="dropdown-item dropdown-item-title t3js-translatedpagetree-switch {f:if(condition: '{selected} == 0', then: 'active')}" data-language="0">
+            <span class="dropdown-item-columns">
+                <span class="dropdown-item-column dropdown-item-column-icon">
+                    <core:icon identifier="actions-translate"/>
+                </span>
+                <span class="dropdown-item-column dropdown-item-column-title">
+                    <f:translate key="LLL:EXT:translated_pagetree/Resources/Private/Language/locallang.xlf:be_users.language.default"/>
+                </span>
+            </span>
+        </a>
+    </li>
+    <f:for each="{languages}" as="language">
+        <f:if condition="{language.value} > 0">
+            <li>
+                <a href="#" class="dropdown-item dropdown-item-title t3js-translatedpagetree-switch {f:if(condition: '{language.value} == {selected}', then: 'active')}" data-language="{language.value}">
+                    <span class="dropdown-item-columns">
+                        <span class="dropdown-item-column dropdown-item-column-icon">
+                            <core:icon identifier="{language.icon}"/>
+                        </span>
+                        <span class="dropdown-item-column dropdown-item-column-title">{language.label}</span>
+                    </span>
+                </a>
+            </li>
+        </f:if>
+    </f:for>
+</ul>
+</html>
